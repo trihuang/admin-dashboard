@@ -1,1 +1,1 @@
-# admin-dashboard
+An exercise with CSS Grid to create the layout for an admin dashboard.
