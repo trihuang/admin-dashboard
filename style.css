@@ -1,0 +1,276 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content";
+    grid-template-columns: 1.125fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.sidebar {
+    background-color: #38bdf8;
+    color: white;
+    grid-area: sidebar;
+    width: 317px;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.logo-container .material-icons {
+    font-size: 60px;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.material-icons {
+    position: relative;
+    top: 4px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.settings {
+    margin-top: 2.75rem;
+}
+
+header {
+    background-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 0.25fr 0.5fr;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.profile-pic.small {
+    width: 60px;
+    height: 60px;
+}
+
+.top-of-header {
+    display: grid;
+    grid-template-areas: 
+    "searchbar icon";
+    grid-template-columns: 3fr 2fr;
+}
+
+.searchbar-container {
+    grid-area: searchbar;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.searchbar-container label {
+    grid-column: 1 / 2;
+    place-self: center end;
+}
+
+label .material-icons {
+    position: static;
+    font-size: 30px;
+}
+
+input {
+    border-radius: 25px;
+    width: 90%;
+    height: 2rem;
+    border: none;
+    background-color: #e7e5e4;
+    font-size: 1.25rem;
+    grid-column: 2 / 3;
+    place-self: center start;
+}
+
+.icons-container {
+    grid-area: icon;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icons-container span {
+    grid-column: 1 / 2;
+    place-self: center end;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icons-container img {
+    font-size: 30px;
+    grid-column: 2 / 3;
+    place-self: center;
+    margin-right: 10px;
+}
+
+.icons-container p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    grid-column: 3 / 5;
+    place-self: center start;
+}
+
+.bottom-of-header {
+    display: grid;
+    grid-template-areas: 
+    "profile button";
+    grid-template-columns: 3fr 2fr;
+}
+
+.profile-container {
+    grid-area: profile;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px 10px;
+}
+
+.profile-container img {
+    grid-area: 1 / 1 / 3 / 2;
+    place-self: center;
+}
+
+.profile-container .p1 {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: end;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.profile-container .p2 {
+    grid-area: 2 / 2 / 3 / 3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+}
+
+.button-container {
+    grid-area: button;
+    width: 100%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 80px;
+}
+
+.new-button {
+    grid-column: 1;
+}
+
+.upload-button {
+    grid-column: 2;
+}
+
+.share-button {
+    grid-column: 3;
+}
+
+.new-button,
+.upload-button,
+.share-button {
+    place-self: center;
+    background-color: #38bdf8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 20px;
+    border: none;
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.content {
+    background-color: #e7e5e4;
+    grid-area: content;
+    display: grid;
+    grid-template-areas: 
+    "header1 header2"
+    "main aside";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 6fr;
+}
+
+.header-one {
+    grid-area: header1;
+}
+
+.header-two {
+    grid-area: header2;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+}
+
+aside {
+    grid-area: aside;
+    display: grid;
+    grid-template-areas:
+    "announcement"
+    "header"
+    "trending";
+    grid-template-rows: 1fr 0.5fr 1fr;
+}
+
+
+.card {
+    background-color: white;
+    border-left: 5px solid orange;
+    margin: 10px;
+}
+
+.announcement-card,
+.trending-card {
+    background-color: white;
+    margin: 10px;
+}
+
+.announcement-card {
+    grid-area: announcement;
+}
+
+.trending-card {
+    grid-area: trending;
+}
+
+aside .header {
+    grid-area: header;
+}

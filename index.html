@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <a href="#">
+                <span class="material-icons">
+                    dashboard
+                    </span>
+                <h1>Dashboard</h1>
+                </a>
+            </div>
+            <ul class="first-ul">
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            home
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            account_circle
+                        </span>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            question_answer
+                        </span>
+                        Messages
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            history
+                        </span>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            file_copy
+                        </span>
+                        Tasks
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            groups
+                        </span>
+                        Communities
+                    </a>
+                </li>
+            </ul>
+            <ul class="settings">
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            settings
+                        </span>    
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            help_center
+                        </span>
+                        Support
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-icons">
+                            verified_user
+                        </span>                            
+                        Privacy
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <div class="top-of-header">
+                <div class="searchbar-container">
+                    <label for="search"><span class="material-icons">
+                        search
+                        </span></label>
+                    <input type="text" id="search">
+                </div>
+                <div class="icons-container">
+                    <span class="material-icons-outlined">
+                        notifications_active
+                        </span>                    
+                    <img src="./img/kori.png" class="profile-pic small">
+                    <p>Morgan Oakley</p>
+                </div>
+            </div>
+            <div class="bottom-of-header">
+                <div class="profile-container">
+                    <img src="./img/kori.png" class="profile-pic">
+                    <p class="p1">Hi there,</p>
+                    <p class="p2">Morgan Oakley (@morgan)</p>
+                </div>
+                <div class="button-container">
+                    <button class="new-button">New</button>
+                    <button class="upload-button">Upload</button>
+                    <button class="share-button">Share</button>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="header-one">Your Projects</div>
+            <div class="header-two">Announcements</div>
+            <main>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </main>
+            <aside>
+                <div class="announcement-card">
+                    <div class="small-card"></div>
+                    <div class="small-card"></div>
+                    <div class="small-card"></div>
+                </div>
+                <div class="header">Trending</div>
+                <div class="trending-card"></div>
+            </aside>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
