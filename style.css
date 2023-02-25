@@ -315,8 +315,12 @@ aside {
 }
 
 .trending-card {
+    padding-left: 15px;
     grid-area: trending;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: repeat(4, 1fr);
 }
 
 aside .header {
@@ -326,6 +330,7 @@ aside .header {
 .small-card {
     margin: 0 15px;
     border-bottom: 2px solid #e7e5e4;
+    cursor: pointer;
 }
 
 .small-card:first-of-type{
@@ -350,4 +355,48 @@ aside .header {
     font-weight: bold;
     place-self: end start;
     margin-left: 10px;
+}
+
+.trending-card img:first-of-type {
+    grid-area: 1 / 1 / 2 / 2;
+    place-self: center;
+}
+
+.trending-card img:nth-of-type(2) {
+    grid-area: 2 / 1 / 3 / 2;
+    place-self: center;
+}
+
+.trending-card img:nth-of-type(3) {
+    grid-area: 3 / 1 / 4 / 2;
+    place-self: center;
+}
+
+.trending-card img:last-of-type {
+    grid-area: 4 / 1 / 5 / 2; 
+    place-self: center;
+}
+
+.trending-card .text:first-of-type {
+    grid-area: 1 / 2 / 2 / 3;
+    place-self: center start;
+}
+
+.trending-card .text:nth-of-type(2) {
+    grid-area: 2 / 2 / 3 / 3;
+    place-self: center start;
+}
+
+.trending-card .text:nth-of-type(3) {
+    grid-area: 3 / 2 / 4 / 3;
+    place-self: center start;
+}
+
+.trending-card .text:last-of-type {
+    grid-area: 4 / 2 / 5 / 3; 
+    place-self: center start;
+}
+
+.trending-card .text {
+    cursor: pointer;
 }
