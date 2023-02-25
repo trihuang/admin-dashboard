@@ -299,6 +299,7 @@ aside {
 .icons .material-icons-outlined {
     margin-right: 30px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .announcement-card,
