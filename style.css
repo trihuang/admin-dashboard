@@ -22,7 +22,7 @@ body {
     grid-area: sidebar;
     width: 317px;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
 }
 
@@ -64,6 +64,8 @@ header {
     grid-area: header;
     display: grid;
     grid-template-rows: 0.25fr 0.5fr;
+    box-shadow: 0 10px 10px -10px gray;
+    z-index: 1;
 }
 
 .profile-pic {
@@ -399,4 +401,11 @@ aside .header {
 
 .trending-card .text {
     cursor: pointer;
+}
+
+.card,
+.announcement-card,
+.trending-card {
+    z-index: 1;
+    box-shadow: 10px 10px 10px -10px gray;
 }
