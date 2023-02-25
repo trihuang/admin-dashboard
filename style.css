@@ -232,7 +232,7 @@ input {
 
 .header-two {
     grid-area: header2;
-    padding-left: 15px;
+    margin-left: 10px;
 }
 
 .header-one,
@@ -249,7 +249,7 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows:  repeat(autofill, minmax(300px, 1fr));
+    grid-template-rows: repeat(autofill, minmax(300px, 1fr));
     padding: 10px;
     padding-top: 0;
     margin-top: 0;
@@ -262,7 +262,7 @@ aside {
     "announcement"
     "header"
     "trending";
-    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-rows: 30% 4.5% 30%;
 }
 
 
@@ -306,16 +306,48 @@ aside {
 .trending-card {
     background-color: white;
     margin: 10px;
+    overflow: hidden;
 }
 
 .announcement-card {
     grid-area: announcement;
+    border-radius: 10px;
 }
 
 .trending-card {
     grid-area: trending;
+    border-radius: 10px;
 }
 
 aside .header {
     grid-area: header;
+}
+
+.small-card {
+    margin: 0 15px;
+    border-bottom: 2px solid #e7e5e4;
+}
+
+.small-card:first-of-type{
+    margin-top: 15px;
+}
+
+.small-card:last-of-type {
+    border: none;
+}
+
+.small-card .text p {
+    font-size: 0.8rem;
+}
+
+.text h5 {
+    margin: 0;
+    padding: 0;
+}
+
+aside .header {
+    font-size: 22px;
+    font-weight: bold;
+    place-self: end start;
+    margin-left: 10px;
 }
